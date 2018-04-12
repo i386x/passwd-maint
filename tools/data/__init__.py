@@ -7,3 +7,11 @@
 #! \version 0.0.0
 #! \fdesc   Translation data initialization.
 #
+
+from . import tr20140118
+
+
+def setup(t25l, tr):
+    return dict(
+        tr20140118 = tr20140118.setup(t25l)
+    ).get(tr)
