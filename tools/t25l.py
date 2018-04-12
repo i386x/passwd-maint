@@ -302,6 +302,8 @@ class PoFile(object):
         try:
             with open(path) as f:
                 po.lines = f.read().split('\n')
+            if po.lines and po.lines[-1] == "":
+                del po.lines[-1]
         except FileNotFoundError:
             raise PoError("Cannot open %r. File not found." % path)
         po.make_items()
