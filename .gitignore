@@ -1,3 +1,5 @@
 /upstream
 /downstream
 /specfiles
+*.log
+__pycache__/
