@@ -1,0 +1,806 @@
+diff --git a/po/de.po b/po/de.po
+index 24b9e23..334c192 100644
+--- a/po/de.po
++++ b/po/de.po
+@@ -23,7 +23,7 @@ msgstr ""
+ #: libuser.c:91
+ #, c-format
+ msgid "%s: libuser initialization error:"
+-msgstr "%s: libuser-Initialisierungsfehler:"
++msgstr "%s: libuser Initialisierungs-Fehler:"
+ 
+ #: libuser.c:157
+ msgid "Warning: unlocked password would be empty."
+@@ -37,11 +37,11 @@ msgstr ""
+ 
+ #: libuser.c:267
+ msgid "Corrupted passwd entry."
+-msgstr "beschädigter Passwort-Eintrag"
++msgstr "Beschädigte Passwort-Eintragung."
+ 
+ #: libuser.c:284
+ msgid "Empty password."
+-msgstr "leeres Passwort"
++msgstr "Leeres Passwort."
+ 
+ #: libuser.c:287
+ msgid "Password locked."
+@@ -69,21 +69,21 @@ msgstr "Passwort mit unbekannter Verschlüsselung gesetzt"
+ 
+ #: libuser.c:305
+ msgid "Alternate authentication scheme in use."
+-msgstr "alternatives Autentifizierungsmuster wird verwendet"
++msgstr "Alternatives Autentifizierungs-Muster wird verwendet"
+ 
+ #: libuser.c:310
+ msgid "Password set, DES crypt."
+-msgstr "Passwort mit DES-Verschlüsselung gesetzt"
++msgstr "Passwort mit DES-Verschlüsselung gesetzt."
+ 
+ #: libuser.c:323
+ #, c-format
+ msgid "No password set.\n"
+-msgstr "kein Passwort gesetzt.\n"
++msgstr "Kein Passwort gesetzt.\n"
+ 
+ #: libuser.c:328
+ #, c-format
+ msgid "Unknown user.\n"
+-msgstr "unbekannter Benutzer.\n"
++msgstr "Unbekannter Benutzer.\n"
+ 
+ #: libuser.c:403
+ #, c-format
+@@ -93,7 +93,7 @@ msgstr ""
+ 
+ #: passwd.c:157
+ msgid "keep non-expired authentication tokens"
+-msgstr "behalte nicht-verfallende Authentifizierungsmerkmale"
++msgstr "behalte nicht-verfallende Authentifizierungs-Merkmale"
+ 
+ #: passwd.c:159
+ msgid ""
+@@ -105,15 +105,15 @@ msgstr ""
+ 
+ #: passwd.c:162
+ msgid "lock the password for the named account (root only)"
+-msgstr "Das Kennwort für das entsprechende Konto sperren (nur root)"
++msgstr "Das Kennwort für das angegebene Konto sperren (nur root)"
+ 
+ #: passwd.c:165
+ msgid "unlock the password for the named account (root only)"
+-msgstr "Das Kennwort für das entsprechende Konto entsperren (nur root)"
++msgstr "Das Kennwort für das angegebene Konto entsperren (nur root)"
+ 
+ #: passwd.c:168
+ msgid "expire the password for the named account (root only)"
+-msgstr "Das Kennwort für das entsprechende Konto verfallen lassen (nur root)"
++msgstr "Das Kennwort für das angegebene Konto verfallen lassen (nur root)"
+ 
+ #: passwd.c:171
+ msgid "force operation"
+@@ -132,7 +132,7 @@ msgid ""
+ "number of days warning users receives before password expiration (root only)"
+ msgstr ""
+ "Anzahl der Tage die Benutzer vor dem Ablauf des Passwortes gewarnt werden "
+-"solle (nur als root möglich)"
++"soll (nur als root möglich)"
+ 
+ #: passwd.c:180
+ msgid ""
+@@ -144,7 +144,7 @@ msgstr ""
+ 
+ #: passwd.c:183
+ msgid "report password status on the named account (root only)"
+-msgstr "melde Passwortstatus des genannten Accounts (nur als root möglich)"
++msgstr "melde Passwort Status des angegebenen Accounts (nur als root möglich)"
+ 
+ #: passwd.c:186
+ msgid "read new tokens from stdin (root only)"
+@@ -168,7 +168,7 @@ msgstr "%s: nur einer von -l, -u, -d, -S kann angegeben werden.\n"
+ #, c-format
+ msgid "%s: Cannot mix one of -l, -u, -d, -S and one of -i, -n, -w, -x.\n"
+ msgstr ""
+-"%s: Die Patameter -l, -u, -d, -S und -i, -n, -w, -x können nicht kombiniert "
++"%s: Die Parameter -l, -u, -d, -S und -i, -n, -w, -x können nicht kombiniert "
+ "werden.\n"
+ 
+ #: passwd.c:282
+@@ -199,7 +199,7 @@ msgstr "%s: Diese Option benötigt einen Benutzernamen.\n"
+ #: passwd.c:335
+ #, c-format
+ msgid "%s: Can not identify you!\n"
+-msgstr "%s: kann Sie nicht identifizieren!\n"
++msgstr "%s: Kann Sie nicht identifizieren!\n"
+ 
+ #: passwd.c:344 passwd.c:379
+ #, c-format
+@@ -211,16 +211,15 @@ msgstr "%s: Unbekannter Benutzername '%s'.\n"
+ msgid "%s: SELinux denying access due to security policy.\n"
+ msgstr ""
+ "%s: SELinux verweigert den Zugriff aufgrund der Sicherheitsrichtlinien.\n"
+-"\n"
+ 
+ #: passwd.c:398
+ #, c-format
+ msgid "Locking password for user %s.\n"
+-msgstr "Sperre Passwort für Benutzer %s.\n"
++msgstr "Sperren Passwort für Benutzer %s.\n"
+ 
+ #: passwd.c:402 passwd.c:414 passwd.c:429 passwd.c:440 passwd.c:458
+ msgid "Success"
+-msgstr "erfolgreich"
++msgstr "Erfolgreich"
+ 
+ #: passwd.c:402 passwd.c:417
+ msgid "Error (password not set?)"
+@@ -229,16 +228,16 @@ msgstr "Fehler (kein Passwort gesetzt?)"
+ #: passwd.c:410
+ #, c-format
+ msgid "Unlocking password for user %s.\n"
+-msgstr "Entsperre Passwort für Benutzer %s.\n"
++msgstr "Entsperren Passwort für Benutzer %s.\n"
+ 
+ #: passwd.c:416
+ msgid "Unsafe operation (use -f to force)"
+-msgstr "unsichere Operation (benutzen Sie -f zum Erzwingen)"
++msgstr "Unsichere Operation (benutzen Sie -f zum Erzwingen)"
+ 
+ #: passwd.c:425
+ #, c-format
+ msgid "Expiring password for user %s.\n"
+-msgstr "Kennwort für Benutzer %s verfallen lassen.\n"
++msgstr "Passwort für Benutzer %s verfallen lassen.\n"
+ 
+ #: passwd.c:429 passwd.c:440 passwd.c:458
+ msgid "Error"
+@@ -247,17 +246,17 @@ msgstr "Fehler"
+ #: passwd.c:437
+ #, c-format
+ msgid "Removing password for user %s.\n"
+-msgstr "entferne Passwort für Benutzer %s.\n"
++msgstr "Entfernen Passwort für Benutzer %s.\n"
+ 
+ #: passwd.c:455
+ #, c-format
+ msgid "Adjusting aging data for user %s.\n"
+-msgstr "justiere Verfallsdaten für Benutzer %s.\n"
++msgstr "justieren Verfallsdaten für Benutzer %s.\n"
+ 
+ #: passwd.c:471
+ #, c-format
+ msgid "Changing password for user %s.\n"
+-msgstr "ändere Passwort für Benutzer %s.\n"
++msgstr "Ändern Passwort für Benutzer %s.\n"
+ 
+ #: passwd.c:489
+ #, c-format
+@@ -287,9 +286,10 @@ msgstr "%s: kann Fehlerverzögerung nicht setzen: %s\n"
+ #: passwd.c:553
+ #, c-format
+ msgid "%s: expired authentication tokens updated successfully.\n"
+-msgstr "%s: abgelaufene Authentifizierungsmerkmale erfolgreich aktualisiert.\n"
++msgstr ""
++"%s: abgelaufene Authentifizierungs-Merkmale erfolgreich aktualisiert.\n"
+ 
+ #: passwd.c:556
+ #, c-format
+ msgid "%s: all authentication tokens updated successfully.\n"
+-msgstr "%s: alle Authentifizierungsmerkmale erfolgreich aktualisiert.\n"
++msgstr "%s: alle Authentifizierungs-Merkmale erfolgreich aktualisiert.\n"
+diff --git a/po/es.po b/po/es.po
+index 795519b..1305023 100644
+--- a/po/es.po
++++ b/po/es.po
+@@ -61,7 +61,7 @@ msgstr "Contraseña establecida, cifrado SHA256."
+ 
+ #: libuser.c:300
+ msgid "Password set, SHA512 crypt."
+-msgstr "Contraseñaestablecida, cifrado SHA512."
++msgstr "Contraseña establecida, cifrado SHA512."
+ 
+ #: libuser.c:302
+ msgid "Password set, unknown crypt variant."
+@@ -94,7 +94,7 @@ msgstr ""
+ 
+ #: passwd.c:157
+ msgid "keep non-expired authentication tokens"
+-msgstr "mantener los tokens de autenticación que no hayan caducado"
++msgstr "mantener las marcas de autenticación no vencidos"
+ 
+ #: passwd.c:159
+ msgid ""
+@@ -110,7 +110,7 @@ msgstr "bloquear la contraseña para la cuenta indicada (sólo root)"
+ 
+ #: passwd.c:165
+ msgid "unlock the password for the named account (root only)"
+-msgstr "desbloquear la contraseña para la cuenta indicada (sólo root)"
++msgstr "desbloquear la contraseña para la cuenta indicada (solo root)"
+ 
+ #: passwd.c:168
+ msgid "expire the password for the named account (root only)"
+@@ -149,7 +149,7 @@ msgstr "informar del estado de la contraseña de la cuenta indicada (sólo root)
+ 
+ #: passwd.c:186
+ msgid "read new tokens from stdin (root only)"
+-msgstr "leer tokens nuevos desde stdin (sólo root)"
++msgstr "leer símbolos nuevos desde stdin (solo root)"
+ 
+ #: passwd.c:193
+ msgid "[OPTION...] <accountName>"
+@@ -280,14 +280,14 @@ msgstr "%s: no se pudo poner el tty para pam: %s\n"
+ #: passwd.c:539
+ #, c-format
+ msgid "%s: unable to set failure delay: %s\n"
+-msgstr "%s: no se pudo poner la espera máxima para fallo: %s\n"
++msgstr "%s: no se pudo establecer la espera máxima para fallo: %s\n"
+ 
+ #: passwd.c:553
+ #, c-format
+ msgid "%s: expired authentication tokens updated successfully.\n"
+-msgstr "%s: tokens de autenticación expirados actualizados con éxito.\n"
++msgstr "%s: símbolos de autenticación vencidos actualizados con éxito.\n"
+ 
+ #: passwd.c:556
+ #, c-format
+ msgid "%s: all authentication tokens updated successfully.\n"
+-msgstr "%s: todos los tokens de autenticación se actualizaron exitosamente.\n"
++msgstr "%s: todos los símbolos de autenticación se actualizaron con éxito.\n"
+diff --git a/po/gu.po b/po/gu.po
+index 23d8de3..acc5257 100644
+--- a/po/gu.po
++++ b/po/gu.po
+@@ -101,15 +101,15 @@ msgstr ""
+ 
+ #: passwd.c:162
+ msgid "lock the password for the named account (root only)"
+-msgstr ""
++msgstr "નામવાળા ખાતા માટે પાસવર્ડને તાળું મારો (માત્ર રુટ)"
+ 
+ #: passwd.c:165
+ msgid "unlock the password for the named account (root only)"
+-msgstr ""
++msgstr "નામવાળા ખાતા માટે પાસવર્ડનું તાળું ખોલો (માત્ર રુટ)"
+ 
+ #: passwd.c:168
+ msgid "expire the password for the named account (root only)"
+-msgstr ""
++msgstr "નામવાળા ખાતા માટે પાસવર્ડ નિવૃત્ત (માત્ર રુટ)"
+ 
+ #: passwd.c:171
+ msgid "force operation"
+@@ -200,7 +200,7 @@ msgstr "%s: અજ્ઞાત વપરાશકર્તા નામ '%s'.\n"
+ #: passwd.c:388
+ #, c-format
+ msgid "%s: SELinux denying access due to security policy.\n"
+-msgstr ""
++msgstr "%s: સુરક્ષા પૉલીસિના કારણે SELinux વપરાશ નામંજૂર કરી રહ્યું છે.\n"
+ 
+ #: passwd.c:398
+ #, c-format
+@@ -227,7 +227,7 @@ msgstr "અસુરક્ષિત પ્રક્રિયા (દબાણ 
+ #: passwd.c:425
+ #, c-format
+ msgid "Expiring password for user %s.\n"
+-msgstr ""
++msgstr "વપરાશકર્તા %s માટે પાસવર્ડ નિવૃત્ત થઇ રહ્યો છે.\n"
+ 
+ #: passwd.c:429 passwd.c:440 passwd.c:458
+ msgid "Error"
+diff --git a/po/hi.po b/po/hi.po
+index 1037918..826004d 100644
+--- a/po/hi.po
++++ b/po/hi.po
+@@ -101,15 +101,15 @@ msgstr ""
+ 
+ #: passwd.c:162
+ msgid "lock the password for the named account (root only)"
+-msgstr ""
++msgstr "नामित खाता के लिये कूटशब्द लॉक करें (सिर्फ रूट)"
+ 
+ #: passwd.c:165
+ msgid "unlock the password for the named account (root only)"
+-msgstr ""
++msgstr "नामित खाता के लिये कूटशब्द अनलॉक करें (सिर्फ रूट)"
+ 
+ #: passwd.c:168
+ msgid "expire the password for the named account (root only)"
+-msgstr ""
++msgstr "नामित खाता के लिये कूटशब्द समय समाप्त करें (सिर्फ रूट)"
+ 
+ #: passwd.c:171
+ msgid "force operation"
+@@ -201,7 +201,7 @@ msgstr "%s: अज्ञात उपयोक्ता नाम '%s'.\n"
+ #: passwd.c:388
+ #, c-format
+ msgid "%s: SELinux denying access due to security policy.\n"
+-msgstr ""
++msgstr "%s: SELinux सुरक्षा नीति के कारण पहुँच को मना कर रहा है.\n"
+ 
+ #: passwd.c:398
+ #, c-format
+@@ -228,7 +228,7 @@ msgstr "असुरक्षित संक्रिया (-f का प्
+ #: passwd.c:425
+ #, c-format
+ msgid "Expiring password for user %s.\n"
+-msgstr ""
++msgstr "%s उपयोक्ता के लिए कूटशब्द समाप्त हो रहा है.\n"
+ 
+ #: passwd.c:429 passwd.c:440 passwd.c:458
+ msgid "Error"
+diff --git a/po/ml.po b/po/ml.po
+index f90fe24..cd111ff 100644
+--- a/po/ml.po
++++ b/po/ml.po
+@@ -103,18 +103,17 @@ msgstr ""
+ 
+ #: passwd.c:162
+ msgid "lock the password for the named account (root only)"
+-msgstr "പറഞ്ഞിരിക്കുന്ന അക്കൌണ്ടിന്റെ പാസ്സ്‌വേർഡ്‌ ലോക്ക് ചെയ്യുക (root-ന് മാത്റം അധികാരമുള്ളൂ)"
++msgstr "പറഞ്ഞ അക്കൌണ്ടിനുള്ള രഹസ്യവാക്ക് പൂട്ടൂക (റൂട്ട് മാത്രം)"
+ 
+ #: passwd.c:165
+ msgid "unlock the password for the named account (root only)"
+-msgstr ""
+-"പറഞ്ഞിരിക്കുന്ന അക്കൌണ്ടിന്റെ പാസ്സ്‌വേർഡ്‌ ലോക്ക് നീക്കം ചെയ്യുക (root-ന് മാത്റം അധികാരമുള്ളൂ)"
++msgstr "പറഞ്ഞ അക്കൌണ്ടിനുള്ള രഹസ്യവാക്ക് ലഭ്യമാക്കുക (റൂട്ട് മാത്രം)"
+ 
+ #: passwd.c:168
+ msgid "expire the password for the named account (root only)"
+ msgstr ""
+-"പറഞ്ഞിരിക്കുന്ന അക്കൌണ്ടിന്റെ പാസ്സ്‌വേർഡ്‌ കാലാവധി നിര്ഭന്ദമായി അവസാനിപ്പിക്കുക (root-ന് "
+-"മാത്റം അധികാരമുള്ളൂ)"
++"പറഞ്ഞ അക്കൌണ്ടിനുള്ള രഹസ്യവാക്കിന്റെ കാലാവധി പൂര്‍ത്തിയാക്കുക (റൂട്ട് "
++"മാത്രം)"
+ 
+ #: passwd.c:171
+ msgid "force operation"
+@@ -211,7 +210,7 @@ msgstr "%s: '%s' എന്ന അപരിചിതമായ യൂസറ്‍
+ #: passwd.c:388
+ #, c-format
+ msgid "%s: SELinux denying access due to security policy.\n"
+-msgstr "%s: SELinux സുരക്ഷ നയം കാരണം പ്രവേശനം നിഷേധിക്കുന്നു.\n"
++msgstr "%s: സുരക്ഷ സംവിധാനം കാരണം SELinux പ്രവേശനം നിഷേധിയ്ക്കുന്നു.\n"
+ 
+ #: passwd.c:398
+ #, c-format
+@@ -238,9 +237,7 @@ msgstr "പാടില്ലാത്ത പ്റക്റിയ (നിറ്
+ #: passwd.c:425
+ #, c-format
+ msgid "Expiring password for user %s.\n"
+-msgstr ""
+-"%s എന്ന ഉപയോക്താവിന്റെ രഹസ്യ വാക്ക് കാലഹരണപെടുത്തുന്നു.\n"
+-"\n"
++msgstr "%s ഉപയോക്താവിനുള്ള രഹസ്യവാക്കിന്റെ കാലാവധി അവസാനിയ്ക്കുന്നു.\n"
+ 
+ #: passwd.c:429 passwd.c:440 passwd.c:458
+ msgid "Error"
+diff --git a/po/mr.po b/po/mr.po
+index e11b4fa..bc641e2 100644
+--- a/po/mr.po
++++ b/po/mr.po
+@@ -102,15 +102,15 @@ msgstr ""
+ 
+ #: passwd.c:162
+ msgid "lock the password for the named account (root only)"
+-msgstr ""
++msgstr "नाव दिलेल्या खात्याकरिता पासवर्ड कुलूपबंद करा (फक्त रूट)"
+ 
+ #: passwd.c:165
+ msgid "unlock the password for the named account (root only)"
+-msgstr ""
++msgstr "नाव दिलेल्या खात्याकरिता पासवर्ड खुले करा (फक्त रूट)"
+ 
+ #: passwd.c:168
+ msgid "expire the password for the named account (root only)"
+-msgstr ""
++msgstr "नाव दिलेल्या खात्याकरिता पासवर्डची वेळ समाप्ति करा (फक्त रूट)"
+ 
+ #: passwd.c:171
+ msgid "force operation"
+@@ -201,7 +201,7 @@ msgstr "%s: अपरीचीत वापरकर्त्याचे ना
+ #: passwd.c:388
+ #, c-format
+ msgid "%s: SELinux denying access due to security policy.\n"
+-msgstr ""
++msgstr "%s: सुरक्षा करारमुळे SELinux प्रवेश नकारत आहे.\n"
+ 
+ #: passwd.c:398
+ #, c-format
+@@ -228,7 +228,7 @@ msgstr "असुरक्षीत कार्यपद्धती (जबर
+ #: passwd.c:425
+ #, c-format
+ msgid "Expiring password for user %s.\n"
+-msgstr ""
++msgstr "वापरकर्ता %s करिता पासवर्डची वेळसमाप्ति झाली.\n"
+ 
+ #: passwd.c:429 passwd.c:440 passwd.c:458
+ msgid "Error"
+diff --git a/po/or.po b/po/or.po
+index f57d11f..7b1626d 100644
+--- a/po/or.po
++++ b/po/or.po
+@@ -102,15 +102,15 @@ msgstr ""
+ 
+ #: passwd.c:162
+ msgid "lock the password for the named account (root only)"
+-msgstr ""
++msgstr "ଏହି ନାମର ଖାତା ପାଇଁ ପ୍ରବେଶ ସଂକେତକୁ ଅପରିବର୍ତ୍ତନୀୟ କରନ୍ତୁ (କେବଳ ରୁଟ)"
+ 
+ #: passwd.c:165
+ msgid "unlock the password for the named account (root only)"
+-msgstr ""
++msgstr "ଏହି ନାମର ଖାତା ପାଇଁ ପ୍ରବେଶ ସଂକେତକୁ ଖୋଲନ୍ତୁ (କେବଳ ରୁଟ)"
+ 
+ #: passwd.c:168
+ msgid "expire the password for the named account (root only)"
+-msgstr ""
++msgstr "ଏହି ନାମର ଖାତା ପାଇଁ ପ୍ରବେଶ ସଂକେତର ସମୟ ସମାପ୍ତି ହୋଇଛି (କେବଳ ରୁଟ)"
+ 
+ #: passwd.c:171
+ msgid "force operation"
+@@ -202,7 +202,7 @@ msgstr "%s: ଅଜଣା ଚାଳକ ନାମ '%s'।\n"
+ #: passwd.c:388
+ #, c-format
+ msgid "%s: SELinux denying access due to security policy.\n"
+-msgstr ""
++msgstr "%s: SELinux ସୁରକ୍ଷା ଦୃଷ୍ଟିକୋଣରୁ ପ୍ରବେଶ ବାରଣ କରିଛି।\n"
+ 
+ #: passwd.c:398
+ #, c-format
+@@ -229,7 +229,7 @@ msgstr "ଅସୁରକ୍ଷିତ କାର୍ଯ୍ଯ (ବାଧ୍ଯ କ
+ #: passwd.c:425
+ #, c-format
+ msgid "Expiring password for user %s.\n"
+-msgstr ""
++msgstr "ବ୍ୟବହାରକାରୀ %s ପାଇଁ ପ୍ରବେଶ ସଂକେତର ସମୟ ସମାପ୍ତି ହେଉଛି।\n"
+ 
+ #: passwd.c:429 passwd.c:440 passwd.c:458
+ msgid "Error"
+diff --git a/po/pa.po b/po/pa.po
+index c7695dc..b768215 100644
+--- a/po/pa.po
++++ b/po/pa.po
+@@ -28,7 +28,7 @@ msgstr "%s: libuser ਸ਼ੁਰੂਆਤ ਗਲਤੀ:"
+ 
+ #: libuser.c:157
+ msgid "Warning: unlocked password would be empty."
+-msgstr "ਚੇਤਾਵਨੀ: ਖੋਲ੍ਹਣ ਪਾਸਵਰਡ ਖਾਲੀ ਹੋਵੇਗਾ।"
++msgstr "ਚੇਤਾਵਨੀ: ਗੈਰ-ਤਾਲਾਬੰਦ ਗੁਪਤ-ਸ਼ਬਦ ਖਾਲੀ ਹੋਵੇਗਾ।"
+ 
+ #: libuser.c:203
+ msgid "Note: deleting a password also unlocks the password."
+@@ -36,62 +36,62 @@ msgstr ""
+ 
+ #: libuser.c:267
+ msgid "Corrupted passwd entry."
+-msgstr "ਨਿਕਾਰਾ ਪਾਸਵਰਡ ਐਂਟਰੀ ਹੈ।"
++msgstr "ਨਕਾਰਾ ਗੁਪਤ-ਸ਼ਬਦ ਇੰਦਰਾਜ ਹੈ।"
+ 
+ #: libuser.c:284
+ msgid "Empty password."
+-msgstr "ਖਾਲੀ ਪਾਸਵਰਡ"
++msgstr "ਖਾਲੀ ਗੁਪਤ-ਸ਼ਬਦ।"
+ 
+ #: libuser.c:287
+ msgid "Password locked."
+-msgstr "ਪਾਸਵਰਡ ਲਾਕ ਹੈ।"
++msgstr "ਗੁਪਤ-ਸ਼ਬਦ ਤਾਲਾਬੰਦ ਹੈ।"
+ 
+ #: libuser.c:291
+ msgid "Password set, MD5 crypt."
+-msgstr "ਪਾਸਵਰਡ ਦਿੱਤਾ, MD੫ ਇੰਕ੍ਰਿਪਟ"
++msgstr "ਗੁਪਤ-ਸ਼ਬਦ ਦਿੱਤਾ, MD੫ ਕ੍ਰਿਪਟ।"
+ 
+ #: libuser.c:294
+ msgid "Password set, blowfish crypt."
+-msgstr "ਪਾਸਵਰਡ ਦਿੱਤਾ, blowfish ਇੰਕ੍ਰਿਪਟ"
++msgstr "ਗੁਪਤ-ਸ਼ਬਦ ਦਿੱਤਾ, blowfish ਕ੍ਰਿਪਟ।"
+ 
+ #: libuser.c:297
+ msgid "Password set, SHA256 crypt."
+-msgstr "ਪਾਸਵਰਡ ਸੈੱਟ, SHA੨੫੬ ਕ੍ਰਿਪਟ।"
++msgstr "ਗੁਪਤ-ਸ਼ਬਦ ਸੈੱਟ, SHA256 ਕ੍ਰਿਪਟ।"
+ 
+ #: libuser.c:300
+ msgid "Password set, SHA512 crypt."
+-msgstr "ਪਾਸਵਰਡ ਸੈੱਟ, SHA੫੧੨ ਕ੍ਰਿਪਟ।"
++msgstr "ਗੁਪਤ-ਸ਼ਬਦ ਸੈੱਟ, SHA256 ਕ੍ਰਿਪਟ।"
+ 
+ #: libuser.c:302
+ msgid "Password set, unknown crypt variant."
+-msgstr "ਪਾਸਵਰਡ ਦਿੱਤਾ, ਅਣਜਾਣ ਇੰਕ੍ਰਿਪਟ ਗੁਣ ਹੈ।"
++msgstr "ਗੁਪਤ-ਸ਼ਬਦ ਦਿੱਤਾ, ਅਣਜਾਣ ਕ੍ਰਿਪਟ ਗੁਣ ਹੈ।"
+ 
+ #: libuser.c:305
+ msgid "Alternate authentication scheme in use."
+-msgstr "ਬਦਲਵਾਂ ਪਰਮਾਣਕਿਤਾ ਸਕੀਮ ਵਰਤੀ ਗਈ ਹੈ।"
++msgstr "ਬਦਲਵੀਂ ਪਰਮਾਣਿਕਤਾ ਤਰਕੀਬ ਵਰਤੋਂ ਵਿੱਚ।"
+ 
+ #: libuser.c:310
+ msgid "Password set, DES crypt."
+-msgstr "ਪਾਸਵਰਡ ਦਿੱਤਾ DES ਦਿੱਤਾ"
++msgstr "ਗੁਪਤ-ਸ਼ਬਦ ਦਿੱਤਾ, DES ਕ੍ਰਿਪਟ।"
+ 
+ #: libuser.c:323
+ #, c-format
+ msgid "No password set.\n"
+-msgstr "ਕੋਈ ਪਾਸਵਰਡ ਨਹੀਂ ਦਿੱਤਾ।\n"
++msgstr "ਕੋਈ ਗੁਪਤ-ਸ਼ਬਦ ਨਹੀਂ ਦਿੱਤਾ।\n"
+ 
+ #: libuser.c:328
+ #, c-format
+ msgid "Unknown user.\n"
+-msgstr "ਅਣਜਾਣ ਯੂਜ਼ਰ\n"
++msgstr "ਅਣਪਛਾਤਾ ਯੂਜ਼ਰ\n"
+ 
+ #: libuser.c:403
+ #, c-format
+ msgid "%s: user account has no support for password aging.\n"
+-msgstr "%s ਯੂਜ਼ਰ ਅਕਾਊਂਟ ਪਾਸਵਰਡ ਉਮਰ ਨਾਲ ਸਹਿਯੋਗ ਨਹੀਂ ਹੈ।\n"
++msgstr "%s: ਯੂਜ਼ਰ ਖਾਤੇ ਕੋਲ ਗੁਪਤ-ਸ਼ਬਦ ਦੀ ਮਿਆਦ ਲਈ ਕੋਈ ਸਮਰਥਨ ਨਹੀਂ ਹੈ।\n"
+ 
+ #: passwd.c:157
+ msgid "keep non-expired authentication tokens"
+-msgstr "ਨਾ-ਮਿਆਦ ਪੱਗੇ ਪਰਮਾਣਿਕਤਾ ਟੋਕਣ ਰੱਖੋ"
++msgstr "ਮਿਆਦ ਨਾ ਪੁੱਗੇ ਪਰਮਾਣਿਕਤਾ ਟੋਕਨ ਰੱਖੋ"
+ 
+ #: passwd.c:159
+ msgid ""
+@@ -101,50 +101,53 @@ msgstr ""
+ 
+ #: passwd.c:162
+ msgid "lock the password for the named account (root only)"
+-msgstr ""
++msgstr "ਦਿੱਤੇ ਗਏ ਨਾਂ ਵਾਲੇ ਵਾਲੇ ਖਾਤੇ ਲਈ ਗੁਪਤ-ਸ਼ਬਦ ਨੂੰ ਤਾਲਾਬੰਦ ਕਰੋ (ਸਿਰਫ ਰੂਟ)"
+ 
+ #: passwd.c:165
+ msgid "unlock the password for the named account (root only)"
+-msgstr ""
++msgstr "ਦਿੱਤੇ ਗਏ ਨਾਂ ਵਾਲੇ ਖਾਤੇ ਲਈ ਗੁਪਤ-ਸ਼ਬਦ ਦਾ ਤਾਲਾ ਖੋਲ੍ਹੋ (ਸਿਰਫ ਰੂਟ)"
+ 
+ #: passwd.c:168
+ msgid "expire the password for the named account (root only)"
+-msgstr ""
++msgstr "ਦਿੱਤੇ ਗਏ ਨਾਂ ਵਾਲੇ ਖਾਤੇ ਲਈ ਗੁਪਤ-ਸ਼ਬਦ ਦੀ ਮਿਆਦ ਪੁਗਾ ਦਿਉ (ਸਿਰਫ ਰੂਟ)"
+ 
+ #: passwd.c:171
+ msgid "force operation"
+-msgstr "ਧੱਕੇ ਨਾਲ"
++msgstr "ਧੱਕੇ ਨਾਲ ਕਾਰਵਾਈ ਕਰੋ"
+ 
+ #: passwd.c:173
+ msgid "maximum password lifetime (root only)"
+-msgstr "ਵੱਧ ਤੋਂ ਵੱਧ ਪਾਸਵਰਡ ਉਮਰ (root ਹੀ)"
++msgstr "ਗੁਪਤ-ਸ਼ਬਦ ਦੀ ਵੱਧ ਤੋਂ ਵੱਧ ਮਿਆਦ (ਸਿਰਫ ਰੂਟ)"
+ 
+ #: passwd.c:175
+ msgid "minimum password lifetime (root only)"
+-msgstr "ਘੱਟੋ-ਘੱਟ ਪਾਸਵਰਡ ਉਮਰ  (root ਹੀ)"
++msgstr "ਗੁਪਤ-ਸ਼ਬਦ ਦੀ ਘੱਟ ਤੋਂ ਘੱਟ ਮਿਆਦ (ਸਿਰਫ ਰੂਟ)"
+ 
+ #: passwd.c:177
+ msgid ""
+ "number of days warning users receives before password expiration (root only)"
+-msgstr "ਪਾਸਵਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ (root ਲਈ) ਤੋਂ ਪਹਿਲਾਂ ਯੂਜ਼ਰਾਂ ਨੂੰ ਚੇਤਾਵਨੀ ਦੇਣ ਲਈ ਦਿਨ"
++msgstr ""
++"ਗੁਪਤ-ਸ਼ਬਦ ਦੀ ਮਿਆਦ ਪੁੱਗਣ (ਸਿਰਫ ਰੂਟ) ਤੋਂ ਪਹਿਲਾਂ ਯੂਜ਼ਰਾਂ ਨੂੰ ਚੇਤਾਵਨੀ ਦੇਣ ਲਈ "
++"ਦਿਨਾਂ ਦੀ ਗਿਣਤੀ"
+ 
+ #: passwd.c:180
+ msgid ""
+ "number of days after password expiration when an account becomes disabled "
+ "(root only)"
+-msgstr "ਅਕਾਊਂਟ ਬੰਦ ਕਰਨ (root ਲਈ) ਲਈ ਮਿਆਦ ਪੁੱਗਣ ਬਾਰੇ ਦਿਨ ਬਾਰੇ ਦੱਸ ਜੀ"
++msgstr ""
++"ਗੁਪਤ-ਸ਼ਬਦ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਬਾਅਦ ਖਾਤਾ ਬੰਦ ਕਰਨ (ਸਿਰਫ ਰੂਟ) ਦਿਨਾਂ ਦੀ ਗਿਣਤੀ"
+ 
+ #: passwd.c:183
+ msgid "report password status on the named account (root only)"
+-msgstr "ਨਾਮੀ ਅਕਾਊਂਟ (root ਲਈ) ਲਈ ਪਾਸਵਰਡ ਹਾਲਤ ਰਿਪੋਰਟ ਕਰੋ"
++msgstr "ਦਿੱਤੇ ਗਏ ਨਾਂ ਵਾਲੇ ਖਾਤੇ (ਸਿਰਫ ਰੂਟ) ਲਈ ਗੁਪਤ-ਸ਼ਬਦ ਦੀ ਹਾਲਤ ਦੀ ਸੂਚਨਾ ਦਿਉ"
+ 
+ #: passwd.c:186
+ msgid "read new tokens from stdin (root only)"
+-msgstr "stdin (root only) ਤੋਂ ਨਵੇਂ ਟੋਕਨ ਪੜ੍ਹੋ"
++msgstr "stdin (ਸਿਰਫ ਰੂਟ) ਤੋਂ ਨਵੇਂ ਟੋਕਨ ਪੜ੍ਹੋ"
+ 
+ #: passwd.c:193
+ msgid "[OPTION...] <accountName>"
+-msgstr "[OPTION...] <accountName>"
++msgstr "[ਚੋਣ...] <accountName>"
+ 
+ #: passwd.c:196
+ #, c-format
+@@ -154,61 +157,63 @@ msgstr "%s: ਗਲਤ ਮੁੱਲ%s: %s\n"
+ #: passwd.c:257
+ #, c-format
+ msgid "%s: Only one of -l, -u, -d, -S may be specified.\n"
+-msgstr "%s: Only one of -l, -u, -d, -S may be specified.\n"
++msgstr "%s: -l, -u, -d, -S ਵਿੱਚੋਂ ਸਿਰਫ ਇੱਕ ਦਰਸਾਇਆ ਜਾ ਸਕਦਾ।\n"
+ 
+ #: passwd.c:266
+ #, c-format
+ msgid "%s: Cannot mix one of -l, -u, -d, -S and one of -i, -n, -w, -x.\n"
+-msgstr "%s: Cannot mix one of -l, -u, -d, -S and one of -i, -n, -w, -x.\n"
++msgstr ""
++"%s: -l, -u, -d, -S ਵਿੱਚੋਂ ਇੱਕ ਅਤੇ -i, -n, -w, -x ਵਿੱਚੋਂ ਇੱਕ ਨੂੰ ਮਿਸ਼ਰਤ ਨਹੀਂ "
++"ਕਰ ਸਕਦਾ।\n"
+ 
+ #: passwd.c:282
+ #, c-format
+ msgid "Only root can do that.\n"
+-msgstr "ਸਿਰਫ root ਹੀ ਕਰ ਸਕਦਾ ਹੈ।\n"
++msgstr "ਸਿਰਫ ਰੂਟ ਹੀ ਉਹ ਕਰ ਸਕਦਾ ਹੈ।\n"
+ 
+ #: passwd.c:295
+ #, c-format
+ msgid "%s: Only root can specify a user name.\n"
+-msgstr "%s: root ਹੀ ਇੱਕ ਯੂਜ਼ਰ ਨਾਂ ਦੇ ਸਕਦਾ ਹੈ।\n"
++msgstr "%s: ਸਿਰਫ ਰੂਟ ਹੀ ਇੱਕ ਯੂਜ਼ਰ ਨਾਂ ਦੇ ਸਕਦਾ ਹੈ।\n"
+ 
+ #: passwd.c:304
+ #, c-format
+ msgid "%s: The user name supplied is too long.\n"
+-msgstr "%s: ਯੂਜ਼ਰ ਨਾਂ ਬਹੁਤ ਲੰਮਾ ਹੈ\n"
++msgstr "%s: ਦਿੱਤਾ ਗਿਆ ਯੂਜ਼ਰ ਨਾਂ ਬਹੁਤ ਲੰਮਾ ਹੈ\n"
+ 
+ #: passwd.c:314
+ #, c-format
+ msgid "%s: Only one user name may be specified.\n"
+-msgstr "%s: ਸਿਰਫ਼ ਇੱਕ ਯੂਜ਼ਰ ਦਿੱਤਾ ਜਾ ਸਕਦਾ ਹੈ\n"
++msgstr "%s: ਸਿਰਫ਼ ਇੱਕ ਯੂਜ਼ਰ ਨਾਂ ਦਿੱਤਾ ਜਾ ਸਕਦਾ ਹੈ\n"
+ 
+ #: passwd.c:324
+ #, c-format
+ msgid "%s: This option requires a user name.\n"
+-msgstr "%s: ਯੂਜ਼ਰ ਨਾਂ ਨਾਲ ਇਹ ਚੋਣ ਲੋੜੀਦੀ ਹੈ।\n"
++msgstr "%s: ਇਸ ਚੋਣ ਨੂੰ ਇੱਕ ਯੂਜ਼ਰ ਨਾਂ ਲੋੜੀਂਦਾ ਹੈ।\n"
+ 
+ #: passwd.c:335
+ #, c-format
+ msgid "%s: Can not identify you!\n"
+-msgstr "%s: ਤੁਹਾਨੂੰ ਪਛਾਣ ਨਹੀਂ ਦੇ ਸਕਦਾ!\n"
++msgstr "%s: ਤੁਹਾਨੂੰ ਪਛਾਣ ਨਹੀਂ ਸਕਦਾ!\n"
+ 
+ #: passwd.c:344 passwd.c:379
+ #, c-format
+ msgid "%s: Unknown user name '%s'.\n"
+-msgstr "%s: ਅਣਜਾਣ ਯੂਜ਼ਰ ਨਾਂ '%s'\n"
++msgstr "%s: ਅਣਪਛਾਤਾ ਯੂਜ਼ਰ ਨਾਂ '%s'\n"
+ 
+ #: passwd.c:388
+ #, c-format
+ msgid "%s: SELinux denying access due to security policy.\n"
+-msgstr ""
++msgstr "%s: ਸੁਰੱਖਿਆ ਨੀਤੀ ਦੇ ਕਰ ਕੇ SELinux ਦਖਲ ਤੋਂ ਇਨਕਾਰੀ ਹੈ।\n"
+ 
+ #: passwd.c:398
+ #, c-format
+ msgid "Locking password for user %s.\n"
+-msgstr "ਯੂਜ਼ਰ %s ਲਈ ਪਾਸਵਰਡ ਲਾਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ\n"
++msgstr "ਯੂਜ਼ਰ %s ਲਈ ਗੁਪਤ-ਸ਼ਬਦ ਤਾਲਾਬੰਦ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।\n"
+ 
+ #: passwd.c:402 passwd.c:414 passwd.c:429 passwd.c:440 passwd.c:458
+ msgid "Success"
+-msgstr "ਸਫ਼ਲ ਹੈ"
++msgstr "ਸਫ਼ਲਤਾ"
+ 
+ #: passwd.c:402 passwd.c:417
+ msgid "Error (password not set?)"
+@@ -217,7 +222,7 @@ msgstr "ਗਲਤੀ (ਪਾਸਵਰਡ ਨਹੀਂ ਦਿੱਤਾ?)"
+ #: passwd.c:410
+ #, c-format
+ msgid "Unlocking password for user %s.\n"
+-msgstr "%s ਯੂਜ਼ਰ ਲਈ ਲਾਕ ਖੋਲ੍ਹਿਆ ਜਾਂਦਾ ਹੈ\n"
++msgstr "ਯੂਜ਼ਰ %s ਲਈ ਤਾਲ੍ਹਾ ਖੋਲ੍ਹਿਆ ਜਾ ਰਿਹਾ\n"
+ 
+ #: passwd.c:416
+ msgid "Unsafe operation (use -f to force)"
+@@ -226,7 +231,7 @@ msgstr "ਅਸੁਰੱਖਿਅਤ ਕਾਰਵਾਈ (ਧੱਕੇ ਲਈ -f 
+ #: passwd.c:425
+ #, c-format
+ msgid "Expiring password for user %s.\n"
+-msgstr ""
++msgstr "ਯੂਜ਼ਰ %s ਲਈ ਗੁਪਤ-ਸ਼ਬਦ ਮਿਆਦ ਪੁਗਾ ਰਿਹਾ\n"
+ 
+ #: passwd.c:429 passwd.c:440 passwd.c:458
+ msgid "Error"
+@@ -235,22 +240,22 @@ msgstr "ਗਲਤੀ"
+ #: passwd.c:437
+ #, c-format
+ msgid "Removing password for user %s.\n"
+-msgstr "ਯੂਜ਼ਰ %s ਲਈ ਪਾਸਵਰਡ ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ\n"
++msgstr "ਯੂਜ਼ਰ %s ਲਈ ਗੁਪਤ-ਸ਼ਬਦ ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ।\n"
+ 
+ #: passwd.c:455
+ #, c-format
+ msgid "Adjusting aging data for user %s.\n"
+-msgstr "%s ਯੂਜ਼ਰ ਲਈ ਉਮਰ ਡਾਟਾ ਠੀਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ\n"
++msgstr "%s ਯੂਜ਼ਰ ਲਈ ਮਿਆਦ ਡਾਟਾ ਠੀਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।\n"
+ 
+ #: passwd.c:471
+ #, c-format
+ msgid "Changing password for user %s.\n"
+-msgstr "%s ਲਈ ਪਾਸਵਰਡ ਬਦਲਿਆ ਜਾ ਰਿਹਾ ਹੈ\n"
++msgstr "%s ਲਈ ਗੁਪਤ-ਸ਼ਬਦ ਬਦਲਿਆ ਜਾ ਰਿਹਾ ਹੈ।\n"
+ 
+ #: passwd.c:489
+ #, c-format
+ msgid "%s: error reading from stdin: %s\n"
+-msgstr "%s: stdin ਤੋਂ ਪੜ੍ਹਨ ਲਈ ਅਸਫ਼ਲ: %s\n"
++msgstr "%s: stdin ਤੋਂ ਪੜ੍ਹਨ ਵਿੱਚ ਅਸਫ਼ਲ: %s\n"
+ 
+ #: passwd.c:496
+ #, c-format
+@@ -260,24 +265,24 @@ msgstr ""
+ #: passwd.c:515
+ #, c-format
+ msgid "%s: unable to start pam: %s\n"
+-msgstr "%s: ਪੈਮ ਸੁਰੂ ਕਰਨ ਲਈ ਫੇਲ੍ਹ: %s\n"
++msgstr "%s: ਪੈਮ ਸੁਰੂ ਕਰਨ ਤੋਂ ਅਸਮਰੱਥ: %s\n"
+ 
+ #: passwd.c:528
+ #, c-format
+ msgid "%s: unable to set tty for pam: %s\n"
+-msgstr "%s: pam ਲਈ tty ਦੇਣ ਲਈ ਫੇਲ੍ਹ: %s\n"
++msgstr "%s: pam ਲਈ tty ਸੈੱਟ ਕਰਨ ਤੋਂ ਅਸਮਰੱਥ: %s\n"
+ 
+ #: passwd.c:539
+ #, c-format
+ msgid "%s: unable to set failure delay: %s\n"
+-msgstr "%s: ਫੇਲ੍ਹ ਅੰਤਰਾਲ ਦੇਣ ਲਈ ਅਸਫ਼ਲ: %s\n"
++msgstr "%s: ਅਸਫਲਤਾ ਅੰਤਰਾਲ ਸੈੱਟ ਕਰਨ ਤੋਂ ਅਸਮਰੱਥ: %s\n"
+ 
+ #: passwd.c:553
+ #, c-format
+ msgid "%s: expired authentication tokens updated successfully.\n"
+-msgstr "%s ਮਿਆਦ ਪੁੱਗੇ ਪਰਮਾਣਕਿਤਾ ਟੋਕਨ ਅੱਪਡੇਟ ਕੀਤੇ ਗਏ।\n"
++msgstr "%s ਮਿਆਦ ਪੁੱਗੇ ਪਰਮਾਣਿਕਤਾ ਸਫਲਤਾਪੂਰਵਕ ਟੋਕਨ ਅੱਪਡੇਟ ਕੀਤੇ ਗਏ।\n"
+ 
+ #: passwd.c:556
+ #, c-format
+ msgid "%s: all authentication tokens updated successfully.\n"
+-msgstr "%s: ਸਭ ਪਰਮਾਣਕਿਤਾ ਟੋਕਨ ਅੱਪਡੇਟ ਕੀਤੇ ਗਏ ਹਨ\n"
++msgstr "%s: ਸਭ ਪਰਮਾਣਿਕਤਾ ਟੋਕਨ ਸਫਲਤਾਪੂਰਵਕ ਅੱਪਡੇਟ ਕੀਤੇ ਗਏ।\n"
+diff --git a/po/ta.po b/po/ta.po
+index 829e88d..cc6315c 100644
+--- a/po/ta.po
++++ b/po/ta.po
+@@ -101,15 +101,15 @@ msgstr ""
+ 
+ #: passwd.c:162
+ msgid "lock the password for the named account (root only)"
+-msgstr ""
++msgstr "பெயரிடப்பட்ட கணக்குக்கான கடவுச்சொல்லை பூட்டு (ரூட் மட்டும்)"
+ 
+ #: passwd.c:165
+ msgid "unlock the password for the named account (root only)"
+-msgstr ""
++msgstr "பெயரிடப்பட்ட கணக்குக்கான கடவுச்சொல்லை பூட்டுநீக்கு (ரூட் மட்டும்)"
+ 
+ #: passwd.c:168
+ msgid "expire the password for the named account (root only)"
+-msgstr ""
++msgstr "பெயரிடப்பட்ட கணக்குக்கான கடவுச்சொல்லை காலாவதியாக்கு (ரூட் மட்டும்)"
+ 
+ #: passwd.c:171
+ msgid "force operation"
+@@ -201,7 +201,7 @@ msgstr "%s: தெரியாத பயனர் பெயர் '%s'.\n"
+ #: passwd.c:388
+ #, c-format
+ msgid "%s: SELinux denying access due to security policy.\n"
+-msgstr ""
++msgstr "%s: பாதுகாப்பு கொள்கையின் காரணமாக SELinux அணுகலை மறுக்கிறது.\n"
+ 
+ #: passwd.c:398
+ #, c-format
+@@ -228,7 +228,7 @@ msgstr "பாதுகாப்பற்ற செயல் (-f ஐ வலி
+ #: passwd.c:425
+ #, c-format
+ msgid "Expiring password for user %s.\n"
+-msgstr ""
++msgstr "பயனர் %s க்கான கடவுச்சொல்லை காலாவதியாக்குகிறது.\n"
+ 
+ #: passwd.c:429 passwd.c:440 passwd.c:458
+ msgid "Error"
